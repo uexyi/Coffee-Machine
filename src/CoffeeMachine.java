@@ -1,11 +1,7 @@
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.OutputStreamWriter;
-import java.io.Writer;
+package src;
+
 import java.util.List;
 import java.util.Scanner;
-
-import javax.swing.JOptionPane;
 
 public class CoffeeMachine {
 	public static final String DATE = "13/04/2022";
@@ -16,14 +12,11 @@ public class CoffeeMachine {
 	public static List<String> drinks = List.of("Caffè Latte", "Espresso Machiato", "Cappucino", "Chocotraum",
 			"Chocogetraenk", "Espresso", "Latte Machiato");
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) {
 		System.out.println(DATE);
 		System.out.println(WELCOME);
 
 		System.out.println(drinks);
-
-		Writer unicodeFileWriter = new OutputStreamWriter(new FileOutputStream("a.txt"), "UTF-8");
-		unicodeFileWriter.write("漢字");
 
 		System.out.print("Please enter a drink: ");
 //        String input = JOptionPane.showInputDialog(null);
